@@ -16,6 +16,15 @@ body
     float: right;
     border: 1px solid white;
 }
-.status_label{
-    background-color: white;
+.footer{
+    background-color: grey;
+    color: white;
+    line-height: 2;
+    margin-bottom: 0px;
+    bottom: 0px;
+    position: sticky;
+    width: 100%;
+}
+.modal-body{
+    text-align: left;
 }
