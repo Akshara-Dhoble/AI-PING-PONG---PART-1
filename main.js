@@ -25,6 +25,7 @@ rightWrist_x = 0 ;
 rightWrist_y = 0 ;
 rightWrist_score = 0 ;
 
+game_status = "" ;
 function setup(){
   var canvas =  createCanvas(700,600);
   canvas.parent("canvas");
@@ -58,7 +59,8 @@ function draw(){
     strokeWeight(0.5);
    paddle1Y = mouseY; 
    rect(paddle1X,paddle1Y,paddle1,paddle1Height,100);
-   
+  
+   if(game_status == "start");
    
     //pc computer paddle
     fill("#FFA500");
@@ -83,7 +85,10 @@ function draw(){
     }
 }
 
-
+function startGame(){
+  game_status = "start" ;
+  document.getElementById("status").innerHTML = "Game Is Loaded";
+ }
 
 //function reset when ball does notcame in the contact of padde
 function reset(){
